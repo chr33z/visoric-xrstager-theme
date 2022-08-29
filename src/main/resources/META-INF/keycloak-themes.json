@@ -1,0 +1,8 @@
+{
+  "themes": [
+    {
+      "name": "xrstager",
+      "types": ["admin", "account", "login", "welcome"]
+    }
+  ]
+}

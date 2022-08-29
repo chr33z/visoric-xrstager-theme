@@ -1,0 +1,179 @@
+/*
+ * Copyright 2016 Red Hat, Inc. and/or its affiliates
+ * and other contributors as indicated by the @author tags.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+:root {
+  --color-primary: #29abe2;
+  --color-primary-darker: #2390be;
+  --color-button-disabled: #b3b3b3;
+  --color-bg: #f2f2f2;
+
+  --text-bright: #fff;
+  --text-light: #f2f2f2;
+  --text-dark: #666;
+  --text-primary: #29abe2;
+  --text-success: #8cc63f;
+
+  --device-panel-width: 700px;
+}
+
+@font-face {
+  font-family: "Linotype Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Linotype_UniversLTStd_Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Linotype Bold";
+  font-style: bold;
+  font-weight: bold;
+  src: url("../fonts/Linotype_UniversLTStd.otf") format("opentype");
+}
+
+div.kc-logo-text {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background-image: url(../img/xr_stager_logo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 20rem;
+  height: 7rem;
+}
+
+.login-pf body {
+  font-family: "Linotype Regular" !important;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background: black url(../img/bg.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login-pf-page {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding-bottom: 10vh !important;
+}
+
+.card-pf {
+  background-color: var(--color-bg);
+  border-radius: 20px;
+  width: 500px;
+  color: var(--text-dark) !important;
+  -webkit-box-shadow: 0px 0px 75px 22px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0px 0px 75px 22px rgba(0, 0, 0, 0.5) !important;
+  margin-bottom: 10vh !important;
+  padding: 30px 20px 0 !important;
+  border: 0px !important;
+}
+
+#kc-content {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+#kc-content-wrapper {
+  width: 100%;
+  margin-top: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group > label[for="username"] {
+  background-image: url("../img/Icon_User.png");
+  font-size: 0;
+  content: "";
+  width: 25px;
+  height: 30px;
+  margin: 2px 15px 0px 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.form-group > label[for="password"] {
+  background-image: url("../img/Icon_Password.png");
+  font-size: 0;
+  content: "";
+  width: 25px;
+  height: 30px;
+  margin: 2px 15px 0px 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: large;
+  border: 0px !important;
+  border-radius: 20px !important;
+  text-align: center !important;
+  color: var(--text-dark) !important;
+}
+
+input[type="submit"] {
+  font-size: large !important;
+  width: 200px !important;
+  height: 40px !important;
+  background-color: #29abe2 !important;
+  border-radius: 10px !important;
+  border: none !important;
+  color: white !important;
+  padding: 8px 16px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  align-self: center !important;
+  margin: 0 auto 35px !important;
+}
+
+input[type="submit"]:hover {
+  background-color: #2390be !important;
+}
+
+@media (max-width: 767px) {
+  div.kc-logo-text {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    background-image: url(../img/xr_stager_logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 250px;
+  }
+
+  .card-pf {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 150px;
+    bottom: 0px;
+    width: 100vw;
+    margin-bottom: 0 !important;
+  }
+}
