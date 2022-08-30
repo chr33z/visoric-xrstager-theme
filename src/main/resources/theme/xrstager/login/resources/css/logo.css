@@ -44,7 +44,7 @@
   src: url("../fonts/Linotype_UniversLTStd.otf") format("opentype");
 }
 
-.kc-locale {
+#kc-locale {
   display: none !important;
 }
 
@@ -52,7 +52,7 @@
   display: none !important;
 }
 
-div.kc-header-wrapper {
+div#kc-header-wrapper {
   position: absolute;
   top: 20px;
   right: 50px;
