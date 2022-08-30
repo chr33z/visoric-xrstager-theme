@@ -166,7 +166,7 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 767px) {
-  div.kc-header-wrapper {
+  div#kc-header-wrapper {
     position: absolute;
     top: 30px;
     right: 5px;
