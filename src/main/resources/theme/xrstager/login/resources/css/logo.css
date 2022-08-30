@@ -53,6 +53,7 @@
 }
 
 div#kc-header-wrapper {
+  font-size: 0;
   position: absolute;
   top: 20px;
   right: 50px;
