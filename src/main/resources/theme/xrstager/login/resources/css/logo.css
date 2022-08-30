@@ -44,7 +44,15 @@
   src: url("../fonts/Linotype_UniversLTStd.otf") format("opentype");
 }
 
-div.kc-logo-text {
+.kc-locale {
+  display: none !important;
+}
+
+.kc-logo-text {
+  display: none !important;
+}
+
+div.kc-header-wrapper {
   position: absolute;
   top: 20px;
   right: 50px;
@@ -157,22 +165,21 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 767px) {
-  div.kc-logo-text {
+  div.kc-header-wrapper {
     position: absolute;
-    top: 50px;
+    top: 30px;
     right: 5px;
     background-image: url(../img/xr_stager_logo.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 250px;
+    height: 100px;
   }
 
   .card-pf {
     position: absolute;
     left: 0;
     right: 0;
-    top: 150px;
-    bottom: 0px;
     width: 100vw;
     margin-bottom: 0 !important;
   }
