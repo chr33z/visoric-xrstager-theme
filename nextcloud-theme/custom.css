@@ -3,8 +3,8 @@ body {
   height: 100vh;
 }
 
-.logo > h1,
-.logo > img {
+.logo>h1,
+.logo>img {
   display: none;
 }
 
@@ -40,6 +40,7 @@ a.button {
   width: auto !important;
   font-weight: normal !important;
   margin: 30px 0 30px !important;
+  padding: 8px 32px !important;
 }
 
 a.button:hover {

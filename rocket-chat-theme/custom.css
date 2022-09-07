@@ -1,0 +1,107 @@
+.rc-old.full-page .logo {
+    background-image: url(https://xrstager.online/xr_stager_logo.91a2cc88de1f0426.png);
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20rem;
+    height: 7rem;
+}
+
+.rc-old.full-page .logo>img {
+    display: none !important;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-card {
+    max-width: 500px;
+    margin: 0 0 10vh 0 !important;
+    background-color: #f2f2f2 !important;
+    border-radius: 20px !important;
+    -webkit-box-shadow: 0px 0px 75px 22px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0px 0px 75px 22px rgba(0, 0, 0, 0.5) !important;
+    padding: 50px 20px 0 !important;
+}
+
+#login-card .fields {
+    display: none !important;
+}
+
+#login-card .rc-button__group {
+    display: none !important;
+}
+
+.rc-old.full-page {
+    background: url(https://xrstager.online/bg.d5b43ec143901958.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.login-terms {
+    width: 100%;
+    position: fixed;
+    bottom: 35px;
+}
+
+.login-terms a {
+    font-size: medium !important;
+    color: #f2f2f2 !important;
+    text-decoration: unset !important;
+    margin: 0 20px !important;
+}
+
+.login-terms .powered-by {
+    display: none !important;
+}
+
+.oauth-login::before {
+    color: #666;
+    content: "Willkommen beim XR Stager, Ihrer Cloud Solution Plattform für XR und Industrial Metaverse in High-End. Melden Sie sich hier mit ihren Zugangsdaten an.";
+}
+
+.oauth-login>.rc-button {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    border: 0 !important;
+    border-radius: 10px !important;
+    background-color: #29abe2 !important;
+    width: auto !important;
+    font-weight: normal !important;
+    margin: 30px 0 30px !important;
+    opacity: 1 !important;
+    flex-grow: 0 !important;
+    padding: 8px 32px !important;
+}
+
+.oauth-login>.rc-button:hover {
+    background-color: #2390be !important;
+    opacity: 1 !important;
+}
+
+.login-terms {
+    font-weight: unset !important;
+}
+
+@media (max-width: 767px) {
+    .rc-old.full-page .logo {
+        top: 30px !important;
+        right: 5px !important;
+        width: 250px !important;
+        height: 100px !important;
+    }
+
+    #login-card {
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100 !important;
+        box-sizing: border-box !important;
+    }
+}
