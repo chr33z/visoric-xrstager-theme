@@ -30,13 +30,50 @@
     padding: 50px 20px 0 !important;
 }
 
-#login-card .fields {
-    display: none !important;
+#login-card .fields .rc-input {
+    visibility: collapse !important;
 }
 
-#login-card .rc-button__group {
-    display: none !important;
+#login-card .rc-button__group .rc-button.rc-button--nude.forgot-password {
+    visibility: collapse !important;
 }
+
+#login-card .rc-button__group .rc-button.rc-button--nude.register {
+    visibility: collapse !important;
+}
+
+#login-card .rc-button__group:has(> .rc-button.rc-button--nude.register) {
+    visibility: collapse !important;
+}
+
+/* START: User name registration */
+#login-card .fields #username {
+    background-color: white;
+    border-radius: 10px;
+    border: 0px;
+    text-align: center;
+}
+
+#login-card .rc-button__group button[type="reset"] {
+    visibility: collapse !important;
+}
+
+#login-card .rc-button__group button[data-loading-text=" Please_wait ..."] {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    border: 0 !important;
+    border-radius: 10px !important;
+    background-color: #29abe2 !important;
+    width: auto !important;
+    font-weight: normal !important;
+    margin: 0 0 30px !important;
+    opacity: 1 !important;
+    flex-grow: 0 !important;
+    padding: 8px 32px !important;
+}
+
+/* END: User name registration */
 
 .rc-old.full-page {
     background: url(https://xrstager.online/bg.d5b43ec143901958.jpg) center center no-repeat;
